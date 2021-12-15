@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PackageLookup</class>
+ <widget class="QDialog" name="PackageLookup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>178</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Edit Soldier Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(38, 66, 32);
+font: 10pt &quot;Courier New&quot;;
+</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>389</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 13pt &quot;Courier&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;
+border-style:inset;</string>
+     </property>
+     <property name="text">
+      <string>Edit Soldier Information</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QSplitter" name="splitter_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLineEdit" name="soldier_name">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 10pt &quot;Courier&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Soldier's Name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 10pt &quot;Courier&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Load Soldier Info</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QCheckBox" name="box_name">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="update_name">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 13pt &quot;Courier&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QSplitter" name="splitter_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QCheckBox" name="box_barracks">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="update_barracks">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 10pt &quot;Courier&quot;;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>HHC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GSB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>17 Fires</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QSplitter" name="splitter_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QCheckBox" name="box_email">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="update_email">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 10pt &quot;Courier&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Updated Email</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="btn_save">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+font: 10pt &quot;Courier&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Save Changes</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1213</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Package Tracker</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(26, 66, 32);
+font: 10pt &quot;Courier New&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="5" column="0">
+        <widget class="QSplitter" name="splitter_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QPushButton" name="btn_home">
+           <property name="minimumSize">
+            <size>
+             <width>771</width>
+             <height>61</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>130</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 36pt &quot;Courier&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 5px;
+border-style:inset;</string>
+           </property>
+           <property name="text">
+            <string>Package Tracker</string>
+           </property>
+          </widget>
+          <widget class="QSplitter" name="splitter">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QPushButton" name="btn_checkin">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>29</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+            </property>
+            <property name="text">
+             <string>Check In</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_checkout">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>29</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+            </property>
+            <property name="text">
+             <string>Check Out</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_lookup">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+            </property>
+            <property name="text">
+             <string>Package Lookup</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+          </property>
+          <property name="text">
+           <string>All Soldiers</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="9" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QCheckBox" name="todopackages">
+         <property name="styleSheet">
+          <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+         </property>
+         <property name="text">
+          <string>Show All Packages</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QTableWidget" name="package_list"/>
+       </item>
+       <item row="8" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="btn_refresh">
+         <property name="styleSheet">
+          <string notr="true">font: 18pt &quot;Courier New&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;</string>
+         </property>
+         <property name="text">
+          <string>Refresh</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1213</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="PackagesPackage_Tracker">
+    <property name="title">
+     <string>Package Tracker</string>
+    </property>
+    <addaction name="PackagesHome_Page"/>
+    <addaction name="PackagesAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuPackages">
+    <property name="title">
+     <string>Packages</string>
+    </property>
+    <addaction name="PackagesPackage_Page"/>
+    <addaction name="PackagesCheck_In"/>
+    <addaction name="PackagesCheck_Out"/>
+    <addaction name="PackagesPackage_Lookup"/>
+    <addaction name="PackagesEdit_Package"/>
+    <addaction name="PackagesResend_Email_Package"/>
+    <addaction name="PackagesDelete_Package"/>
+   </widget>
+   <widget class="QMenu" name="menuSoldiers">
+    <property name="title">
+     <string>Soldiers</string>
+    </property>
+    <addaction name="PackagesSoldiers_Page"/>
+    <addaction name="PackagesAdd"/>
+    <addaction name="PackagesEdit"/>
+    <addaction name="PackagesSearch"/>
+    <addaction name="PackagesDelete"/>
+    <addaction name="PackagesResend_Email_Soldier"/>
+   </widget>
+   <addaction name="PackagesPackage_Tracker"/>
+   <addaction name="menuPackages"/>
+   <addaction name="menuSoldiers"/>
+  </widget>
+  <action name="actionAdd_Soldier">
+   <property name="text">
+    <string>Soldiers</string>
+   </property>
+  </action>
+  <action name="actionCheck_In_Out_Package">
+   <property name="text">
+    <string>Check In/Out Package</string>
+   </property>
+  </action>
+  <action name="actionAll_Packages">
+   <property name="text">
+    <string>Packages</string>
+   </property>
+  </action>
+  <action name="actionAll_Soldiers">
+   <property name="text">
+    <string>All Soldiers</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="PackagesAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSoldiers_List">
+   <property name="text">
+    <string>Soldiers List</string>
+   </property>
+  </action>
+  <action name="actionPackabes">
+   <property name="text">
+    <string>Packages</string>
+   </property>
+  </action>
+  <action name="actionHome_Page">
+   <property name="text">
+    <string>Home Page</string>
+   </property>
+  </action>
+  <action name="actionCheck_In_Package">
+   <property name="text">
+    <string>Check In Package</string>
+   </property>
+  </action>
+  <action name="actionCheck_Out_Package">
+   <property name="text">
+    <string>Check Out Package</string>
+   </property>
+  </action>
+  <action name="actionCheck_In">
+   <property name="text">
+    <string>Check In</string>
+   </property>
+  </action>
+  <action name="actionCheck_Out">
+   <property name="text">
+    <string>Check Out</string>
+   </property>
+  </action>
+  <action name="actionEdit_Package">
+   <property name="text">
+    <string>Edit Package</string>
+   </property>
+  </action>
+  <action name="actionPackage_Lookup">
+   <property name="text">
+    <string>Package Lookup</string>
+   </property>
+  </action>
+  <action name="PackagesCheck_In">
+   <property name="text">
+    <string>Check In</string>
+   </property>
+  </action>
+  <action name="PackagesCheck_Out">
+   <property name="text">
+    <string>Check Out</string>
+   </property>
+  </action>
+  <action name="PackagesPackage_Lookup">
+   <property name="text">
+    <string>Package Lookup</string>
+   </property>
+  </action>
+  <action name="PackagesResend_Email_Package">
+   <property name="text">
+    <string>Resend Email</string>
+   </property>
+  </action>
+  <action name="homeBy_Name">
+   <property name="text">
+    <string>By Name</string>
+   </property>
+  </action>
+  <action name="homeBy_Tracking_Number">
+   <property name="text">
+    <string>By Tracking Number</string>
+   </property>
+  </action>
+  <action name="PackagesAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="PackagesEdit">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="PackagesDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="PackagesResend_Email_Soldier">
+   <property name="text">
+    <string>Send Email Confirmation</string>
+   </property>
+  </action>
+  <action name="PackagesDelete_Package">
+   <property name="text">
+    <string>Delete Package</string>
+   </property>
+  </action>
+  <action name="PackagesPackage_Page">
+   <property name="text">
+    <string>Packages Page</string>
+   </property>
+  </action>
+  <action name="PackagesHome_Page">
+   <property name="text">
+    <string>Home Page</string>
+   </property>
+  </action>
+  <action name="PackagesSoldiers_Page">
+   <property name="text">
+    <string>Soldiers Page</string>
+   </property>
+  </action>
+  <action name="PackagesSearch">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="PackagesEdit_Package">
+   <property name="text">
+    <string>Edit Package</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

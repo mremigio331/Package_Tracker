@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1099</width>
+    <height>986</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(28, 66, 32);
+font: 10pt &quot;Courier New&quot;;
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 18pt &quot;Courier&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;
+border-style:inset;</string>
+       </property>
+       <property name="text">
+        <string>Package Lookup</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLineEdit" name="search_soldier">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 13pt &quot;Courier&quot;;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>Name or Tracking Number</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="lookupcombo">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 13pt &quot;Courier&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tracking Number</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btn_search">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+font: 13pt &quot;Courier&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QComboBox" name="packagecombo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 13pt &quot;Courier&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Outstanding Packages</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>All Packages</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QTableWidget" name="package_list"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

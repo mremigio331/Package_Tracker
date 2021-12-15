@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(28, 66, 32);
+font: 10pt &quot;Courier New&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>600</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Courier&quot;;
+background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-width : 2px;
+border-style:inset;</string>
+    </property>
+    <property name="text">
+     <string>Package Lookup</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>600</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLineEdit" name="search_soldier">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+font: 13pt &quot;Courier&quot;;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Soldier's Name</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_search">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 184, 28);
+border-color: rgb(0, 0, 0);
+font: 13pt &quot;Courier&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
